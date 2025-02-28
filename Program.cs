@@ -1,19 +1,19 @@
 ﻿    Console.WriteLine("First Program");
-    BankAccount bc = new BankAccount(2000);
+    BankAccount bc = new BankAccount(5000);
     Console.WriteLine($"Current Balance: {bc.GetBalance()}");
-    bc.Deposit(100);
+    bc.Deposit(500);
     Console.WriteLine($"Current Balance After Deposit: {bc.GetBalance()}");
-    bc.Withdraw(1000);
+    bc.Withdraw(2000);
     Console.WriteLine($"Current Balance After Withdraw: {bc.GetBalance()}");
     Console.WriteLine();
 
     Console.WriteLine("Second Program");
-    Student st = new Student("Srini", 18);
+    Student st = new Student("Venkat", 15);
     Console.WriteLine($"Student Name: {st.Name}, RollNo: {st.RollNo}");
     Console.WriteLine();
 
     Console.WriteLine("Third Program");
-    Book b1 = new Book("The Mahabharatham", "Veda Vyasa");
+    Book b1 = new Book("The Ramayanam", "Valmiki");
     Console.WriteLine($"Book Title: {b1.Title}, Author: {b1.Author}");
     Console.WriteLine();
 
@@ -40,9 +40,9 @@
 
     Console.WriteLine("Seventh Program");
     Calculator calc = new Calculator();
-    calc.Add(10, 20);
-    calc.Add(10, 20, 30);
-    calc.Add(10.45678, 20.456789);
+    calc.Add(5, 6);
+    calc.Add(5, 6, 7);
+    calc.Add(11.45678, 14.456789);
     Console.WriteLine();
 
     Console.WriteLine("Eighth Program");
@@ -66,25 +66,25 @@
     Console.WriteLine();
 
     Console.WriteLine("Eleventh Program");
-    ComplexNumber c1 = new ComplexNumber(3, 4);
-    ComplexNumber c2 = new ComplexNumber(1, 2);
+    ComplexNumber c1 = new ComplexNumber(1, 4);
+    ComplexNumber c2 = new ComplexNumber(3, 2);
     ComplexNumber sum = c1 + c2;
     Console.WriteLine($"Sum: {sum}");
     Console.WriteLine();
 
-    Console.WriteLine("Twelfth Program");
-    Department dept1 = new Department("IT", new Manager("John"));
+    Console.WriteLine("Twelth Program");
+    Department dept1 = new Department("ECE", new Manager("Rohit Dubasi"));
     Department shallowCopy = dept1.ShallowCopy();
     Department deepCopy = dept1.DeepCopy();
     Console.WriteLine($"Original Manager: {dept1.DeptManager.Name}");
-    shallowCopy.DeptManager.Name = "Alice";
+    shallowCopy.DeptManager.Name = "Saketh";
     Console.WriteLine($"After modifying shallow copy, Original Manager: {dept1.DeptManager.Name}");
     Console.WriteLine($"Deep Copy Manager: {deepCopy.DeptManager.Name}");
     Console.WriteLine();
 
     Console.WriteLine("Thirteenth Program");
     Console.WriteLine("Initial Interest Rate: " + Bank.GetInterestRate());
-    Bank.SetInterestRate(5.0);
+    Bank.SetInterestRate(3.0);
     Console.WriteLine("Updated Interest Rate: " + Bank.GetInterestRate());
     Console.WriteLine();
 
